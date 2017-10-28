@@ -36,7 +36,7 @@ jekyll 3.6.2
 Ya tenemos las versiones de trabajo de las aplicaciones, ahora vamos a crear un blog
 Nos situamos en la carpeta dentro de la cual irán los archivos del blog
 
-cd <<Careta de trabajo>>.....
+cd <<Carpeta de trabajo>>.....
 
 y desde allí lanzamos los comandos:
 
