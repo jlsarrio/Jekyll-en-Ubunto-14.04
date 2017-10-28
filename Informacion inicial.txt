@@ -52,11 +52,19 @@ http://localhost:4000/
 Veremos la página que hemos creado por defecto
 
 ----------------------------
+Abrimos github.com
+Creamos un nuevo repositorio p.e. con el nombre jekyll-blog
+y lo dejamos vacío.
+
+Subimos la carpeta que hemos creado al repositorio
+
+
+----------------------------
 En local funciona bien pero al subir al servidor, si el repositorio se crea en una carpeta,no se forman correctamente los enlaces
 dentro de la página, toman como origen la página principal pero no insertan la carpeta donde está el repositorio.
 Se resuelve modificando el archivo _config.yml
 inserto la linea:
-baseurl: "jekyll-blogPba" # the subpath of your site, e.g. /blog
+baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
 y comento la original:
 #baseurl: "" # the subpath of your site, e.g. /blog
 de modo que en local (bundle exec jekyll serve) utilizo la primera (quitando el comentario #)
