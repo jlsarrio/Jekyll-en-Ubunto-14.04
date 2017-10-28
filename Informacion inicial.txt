@@ -34,9 +34,12 @@ jekyll 3.6.2
 
 -----------------------
 Ya tenemos las versiones de trabajo de las aplicaciones, ahora vamos a crear un blog
-Nos situamos en la carpeta dentro de la cual irán los archivos del blog y desde allí lanzamos los comandos:
+Nos situamos en la carpeta dentro de la cual irán los archivos del blog
 
-cd ........
+cd <<Careta de trabajo>>.....
+
+y desde allí lanzamos los comandos:
+
 jekyll new jekyll-blog
 cd jekyll-blog
 sudo gem install exec jekyll serve
@@ -50,7 +53,7 @@ Veremos la página que hemos creado por defecto
 
 ----------------------------
 En local funciona bien pero al subir al servidor, si el repositorio se crea en una carpeta,no se forman correctamente los enlaces
-dentro de la página, toman como origen la página principal pero no insertan la página donde está el repositorio.
+dentro de la página, toman como origen la página principal pero no insertan la carpeta donde está el repositorio.
 Se resuelve modificando el archivo _config.yml
 inserto la linea:
 baseurl: "jekyll-blogPba" # the subpath of your site, e.g. /blog
