@@ -75,7 +75,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
 
 y al subirlo (git init) utilizo la segunda.
-3baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "" # the subpath of your site, e.g. /blog
 baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
 
 
