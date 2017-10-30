@@ -34,6 +34,7 @@ jekyll 3.6.2
 
 -----------------------
 Ya tenemos las versiones de trabajo de las aplicaciones, ahora vamos a crear un blog
+por ejemplo con el nombre "jekyll-blog"
 Nos situamos en la carpeta dentro de la cual irán los archivos del blog
 
 cd <<Carpeta de trabajo>>.....
@@ -58,14 +59,24 @@ y lo dejamos vacío.
 
 Subimos la carpeta que hemos creado al repositorio
 
-
 ----------------------------
 En local funciona bien pero al subir al servidor, si el repositorio se crea en una carpeta,no se forman correctamente los enlaces
 dentro de la página, toman como origen la página principal pero no insertan la carpeta donde está el repositorio.
 Se resuelve modificando el archivo _config.yml
-inserto la linea:
+
+A continuación de la linea:
+baseurl: "" # the subpath of your site, e.g. /blog
+
+Hago una copia incluyendo el nombre de la carpeta en el repositorio (jekyll-blog):
 baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
-y comento la original:
-#baseurl: "" # the subpath of your site, e.g. /blog
-de modo que en local (bundle exec jekyll serve) utilizo la primera (quitando el comentario #)
+
+de modo que en local (bundle exec jekyll serve) utilizo la primera:
+baseurl: "" # the subpath of your site, e.g. /blog
+#baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
+
 y al subirlo (git init) utilizo la segunda.
+3baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "jekyll-blog" # the subpath of your site, e.g. /blog
+
+
+
